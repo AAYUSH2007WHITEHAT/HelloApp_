@@ -1,7 +1,10 @@
 package HelloApp.src.main.java.com.example;
 
-public class UC1 {
+public class HelloApp
+
+{
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        String name = "krs";
+        System.out.println("Hello " + name + "!");
     }
 }
