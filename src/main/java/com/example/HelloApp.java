@@ -6,12 +6,14 @@ public class HelloApp {
         } else {
             System.out.print("Hello ");
 
-            for (int i = 0; i < args.length; i++) {
-                System.out.print(args[i]);
+            boolean first = true;
 
-                if (i < args.length - 1) {
+            for (String name : args) {
+                if (!first) {
                     System.out.print(", ");
                 }
+                System.out.print(name);
+                first = false;
             }
             System.out.println();
         }
